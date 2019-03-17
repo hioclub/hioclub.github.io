@@ -1,1 +1,304 @@
-hello world
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+  <meta charset="UTF-8">
+  <title>國立臺南大學 海鷗社</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC" rel="stylesheet">
+</head>
+
+<body style="margin:0; width:100%;">
+
+  <nav id="logo-scroll" class="nav navbar-default" style="position:fixed; top:0; left:0; z-index:1; width:100%; background-color:transparent; text-align: center;">
+    <font size="5">
+      <div class="collapse navbar-collapse" style="text-align: center;">
+        <ul class="nav navbar-nav" style="margin:0px auto; float:none; display:inline-block;">
+
+          <li><a data-toggle="tab" href="#home">首頁</a></li>
+          <li>
+            <p>|</p>
+          </li>
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">關於我們</a>
+            <ul class="dropdown-menu" style="z-index:2; background-color:#e7e7e7; border:0;">
+              <li><a data-toggle="tab" href="#home">首頁</a></li>
+              <li><a data-toggle="tab" href="#home">首頁</a></li>
+            </ul>
+          </li>
+          <li>
+            <p>|</p>
+          </li>
+          <li><a data-toggle="tab" href="#organize">組織章程</a></li>
+          <li>
+            <p>|</p>
+          </li>
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">幹部介紹</a>
+            <ul class="dropdown-menu" style="z-index:2; background-color:#e7e7e7; border:0;">
+              <li><a data-toggle="tab" href="#teacher">社團老師</a></li>
+              <li><a data-toggle="tab" href="#student">社團學生</a></li>
+            </ul>
+          </li>
+          <li>
+            <p>|</p>
+          </li>
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">社課</a>
+            <ul class="dropdown-menu" style="z-index:2; background-color:#e7e7e7; border:0;">
+              <li><a data-toggle="tab" href="#home">首頁</a></li>
+              <li><a data-toggle="tab" href="#home">首頁</a></li>
+            </ul>
+          </li>
+          <li>
+            <p>|</p>
+          </li>
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">行事曆</a>
+            <ul class="dropdown-menu" style="z-index:2; background-color:#e7e7e7; border:0;">
+              <li><a data-toggle="tab" href="#home">首頁</a></li>
+              <li><a data-toggle="tab" href="#home">首頁</a></li>
+            </ul>
+          </li>
+          <li>
+            <p>|</p>
+          </li>
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">財務報表</a>
+            <ul class="dropdown-menu" style="z-index:2; background-color:#e7e7e7; border:0;">
+              <li><a data-toggle="tab" href="#home">首頁</a></li>
+              <li><a data-toggle="tab" href="#home">首頁</a></li>
+            </ul>
+          </li>
+          <li>
+            <p>|</p>
+          </li>
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">活動相簿</a>
+            <ul class="dropdown-menu" style="z-index:2; background-color:#e7e7e7; border:0;">
+              <li><a data-toggle="tab" href="#home">首頁</a></li>
+              <li><a data-toggle="tab" href="#home">首頁</a></li>
+            </ul>
+          </li>
+          <li>
+            <p>|</p>
+          </li>
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">活動影片</a>
+            <ul class="dropdown-menu" style="z-index:2; background-color:#e7e7e7; border:0;">
+              <li><a data-toggle="tab" href="#home">首頁</a></li>
+              <li><a data-toggle="tab" href="#home">首頁</a></li>
+            </ul>
+          </li>
+          <li>
+            <p>|</p>
+          </li>
+          <li><a data-toggle="tab" href="#contact">連絡資訊</a></li>
+
+        </ul>
+      </div>
+    </font>
+  </nav>
+  <script>
+    var win = window,
+      docEl = document.documentElement,
+      $logo = document.getElementById('logo-scroll');
+
+    win.onscroll = function() {
+      var sTop = (this.pageYOffset || docEl.scrollTop) - (docEl.clientTop || 0);
+      $logo.style.backgroundColor = sTop > 100 ? "black" : "transparent";
+    };
+  </script>
+  <div class="wrapper" style="width:100%; position:absolute; top:0; left:0; z-index:0;">
+    <div class="tab-content">
+      <div id="home" class="tab-pane fade in active">
+        <div class="banner">
+          <img class="cover" src="封面更新.png" alt="bg" style="width:100%;">
+        </div>
+        <div class="sec1" style="width:100%; height: 650px;">
+          <div style="width:40%; margin-top:8%; text-align:center; display:inline-block;">
+            <!--<img src="圖片1.png" alt="title" style="width:80%">-->
+            <p>
+              <font size="7">歡迎光臨海鷗社</font><br><br><br>
+              <font size="6">Welcome Hio Club</font><br>
+            </p>
+            <a href="https://www.facebook.com/HioLoveU/?epa=SEARCH_BOX" target="_blank">
+              <img src="FBsearch 圖.png" alt="fbsearch" style="width:80%">
+            </a>
+          </div>
+          <div class="coverflow" style="position:absolute; width:60%; margin-top:1%; text-align:center; display:inline-block;">
+            <img src="幻燈片\照片跑馬燈1.PNG">
+            <img src="幻燈片\照片跑馬燈2.PNG">
+            <img src="幻燈片\照片跑馬燈3.PNG">
+            <img src="幻燈片\照片跑馬燈4.PNG">
+            <img src="幻燈片\照片跑馬燈5.PNG">
+            <img src="幻燈片\照片跑馬燈6.PNG">
+          </div>
+        </div>
+        <div class="sec2" style="width:100%;">
+          <font size="6">
+            <div class="title" style="margin-left:15%; margin-bottom:0%; margin-top:3%">
+              <p style="margin:0%">※活動資訊※</p>
+            </div>
+            <div class="text" style="margin-left:17%">
+              <ul style="margin:0%">
+                <li>
+                  <div class="left" style="width:15%;text-align:right;display:inline-block; color:rgb(68, 117, 161)">
+                    <p>108.01.23</p>
+                  </div>
+                  <div class="right" style="width:68%;margin-left:5%;display:inline-block;">
+                    <p>| 107學年度 寒假育樂營 乘風破浪吧！海鷗福氣號 ! </p>
+                  </div>
+                </li>
+                <li>
+                  <div class="left" style="width:15%;text-align:right;display:inline-block; color:rgb(68, 117, 161)">
+                    <p>108.01.02</p>
+                  </div>
+                  <div class="right" style="width:68%;margin-left:5%;display:inline-block;">
+                    <p>| 海鷗期末活動 繭破-此生只為遇見你</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="left" style="width:15%;text-align:right;display:inline-block; color:rgb(68, 117, 161)">
+                    <p>107.12.29</p>
+                  </div>
+                  <div class="right" style="width:68%;margin-left:5%;display:inline-block;">
+                    <p>| 活力營 活力營 海鷗大戲院</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="left" style="width:15%;text-align:right;display:inline-block; color:rgb(68, 117, 161)">
+                    <p>107.12.10</p>
+                  </div>
+                  <div class="right" style="width:68%;margin-left:5%;display:inline-block;">
+                    <p>| 海鷗傳情 海鷗柑仔店 古早味的思念</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="left" style="width:15%;text-align:right;display:inline-block; color:rgb(68, 117, 161)">
+                    <p>107.12.08</p>
+                  </div>
+                  <div class="right" style="width:68%;margin-left:5%;display:inline-block;">
+                    <p>| 中小學第二梯次 海鷗童話村-勇闖黑森林</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="left" style="width:15%;text-align:right;display:inline-block; color:rgb(68, 117, 161)">
+                    <p>107.11.24</p>
+                  </div>
+                  <div class="right" style="width:68%;margin-left:5%;display:inline-block;">
+                    <p>| 中小學第一梯次 海鷗童話村-勇闖黑森林</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="left" style="width:15%;text-align:right;display:inline-block; color:rgb(68, 117, 161)">
+                    <p>107.11.14</p>
+                  </div>
+                  <div class="right" style="width:68%;margin-left:5%;display:inline-block;">
+                    <p>| 海鷗社課活動 海鷗奇圓 - 甜進你的心</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="left" style="width:15%;text-align:right;display:inline-block; color:rgb(68, 117, 161)">
+                    <p>107.11.01</p>
+                  </div>
+                  <div class="right" style="width:68%;margin-left:5%;display:inline-block;">
+                    <p>| ALL PASS糖發放</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="left" style="width:15%;text-align:right;display:inline-block; color:rgb(68, 117, 161)">
+                    <p>107.10.24</p>
+                  </div>
+                  <div class="right" style="width:68%;margin-left:5%;display:inline-block;">
+                    <p>| 海鷗社課活動 鷗西傑克森-攻城掠地的交戰</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="left" style="width:15%;text-align:right;display:inline-block; color:rgb(68, 117, 161)">
+                    <p>107.10.17</p>
+                  </div>
+                  <div class="right" style="width:68%;margin-left:5%;display:inline-block;">
+                    <p>| 海鷗期初活動 海鷗家族派對-十年前的秘密</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="left" style="width:15%;text-align:right;display:inline-block; color:rgb(68, 117, 161)">
+                    <p>107.09.28</p>
+                  </div>
+                  <div class="right" style="width:68%;margin-left:5%;display:inline-block;">
+                    <p>| 海鷗夜烤 海利鷗特之烤伯的烤宴</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="left" style="width:15%;text-align:right;display:inline-block; color:rgb(68, 117, 161)">
+                    <p>107.09.04</p>
+                  </div>
+                  <div class="right" style="width:68%;margin-left:5%;display:inline-block;">
+                    <p>| 社團博覽會</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="left" style="width:15%;text-align:right;display:inline-block; color:rgb(68, 117, 161)">
+                    <p>107.09.03</p>
+                  </div>
+                  <div class="right" style="width:68%;margin-left:5%;display:inline-block;">
+                    <p>| 台南大學新生健康檢查</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="left" style="width:15%;text-align:right;display:inline-block; color:rgb(68, 117, 161)">
+                    <p>107.09.01</p>
+                  </div>
+                  <div class="right" style="width:68%;margin-left:5%;display:inline-block;">
+                    <p>| 海鷗服務隊-海鷗ㄉㄚㄉㄚ使命必達</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </font>
+        </div>
+        <div class="sec3" style="width:100%; height: 200px; background:#000000"></div>
+
+      </div>
+      <div id="organize" class="tab-pane fade">
+        <div class="banner">
+          <img class="cover" src="封面更新.png" alt="bg" style="width:100%;">
+        </div>
+        <div class="sec3" style="width:100%; height: 200px; background:#000000"></div>
+      </div>
+      <div id="teacher" class="tab-pane fade">
+        <div class="banner">
+          <img class="cover" src="封面更新.png" alt="bg" style="width:100%;">
+        </div>
+        <div class="sec3" style="width:100%; height: 200px; background:#000000"></div>
+      </div>
+      <div id="student" class="tab-pane fade">
+        <div class="banner">
+          <img class="cover" src="社團幹部\student.bmp" alt="bg" style="width:100%;">
+        </div>
+        <div class="sec3" style="width:100%; height: 200px; background:#000000"></div>
+      </div>
+      <div id="contact" class="tab-pane fade">
+        <div class="banner">
+          <img class="cover" src="封面更新.png" alt="bg" style="width:100%;">
+        </div>
+        <div class="sec3" style="width:100%; height: 200px; background:#000000"></div>
+      </div>
+      <!--
+      <div id="menu2" class="tab-pane fade">
+        <div class="banner">
+          <img class="cover" src="封面更新.png" alt="bg" style="width:100%;">
+        </div>
+        <div class="sec3" style="width:100%; height: 200px; background:#000000"></div>
+      </div>
+      -->
+    </div>
+  </div>
+
+</body>
+
+</html>
